@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi Cuaca</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplikasi Cuaca</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Aplikasi Cuaca</h1>
-        <div class="input-group">
-            <input type="text" id="city" placeholder="Masukkan nama kota" />
-            <button id="getWeather">Cari</button>
-        </div>
+  <div class="container">
+    
+    <!-- Ikon default (emoji, bisa dihapus jika pakai SVG otomatis saja) -->
+    <div class="logo" id="defaultIcon">⛅</div>
 
-        <div id="weather" class="hidden">
-        <h2 id="location">x</h2>
-        <p id="temperature">x</p>
-        <p id="description">x</p>
-        <img id="icon" alt="Ikon Cuaca" />
-        </div>
+    <h1>Aplikasi Cuaca</h1>
+
+    <div class="input-group">
+      <input type="text" id="city" placeholder="Masukkan nama kota" />
+      <button id="getWeather">Cari</button>
     </div>
-    <script src="script.js"></script>
+
+    <div id="weather" class="hidden">
+      <!-- Ikon cuaca otomatis -->
+      <div id="customIcon" class="logo"></div>
+
+      <!-- Informasi cuaca -->
+      <h2 id="location">x</h2>
+      <p id="temperature">x</p>
+      <p id="description">x</p>
+    
+      <img id="icon" alt="Ikon Cuaca" class="hidden" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

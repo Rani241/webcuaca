@@ -1,4 +1,3 @@
-/* Reset dasar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -82,3 +81,16 @@ h1 {
 .hidden {
   display: none;
 }
+.logo {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.logo {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
